@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+
+.background{
+    background-color: salmon;
+
+    background: url(https://cdn.shopify.com/s/files/1/0512/5039/7393/products/0d9a8425_copy_1.jpg?v=1613893400);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.positions {
+  display: flex;
+  width: 33rem;
+  height: 33rem;
+  gap: 1em;
+  justify-content: center;
+  flex-flow: wrap row;
+  align-items: center;
+}
+.positions > * {
+  width: 10rem;
+  height: 10rem;
+  background: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: midnightblue;
+}
+.top {
+  color: midnightblue;
+  background: lightsteelblue;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  width: 50vw;
+  max-width: 30rem;
+  min-width: 20rem;
+  text-align: center;
+  display: flex;
+  font-family: Montserrat;
+  flex-flow: nowrap column;
+  gap: 2rem;
+}
+#start {
+  background: aliceblue;
+  color: midnightblue;
+  margin: auto;
+  width: 60%;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+#start:hover {
+    background: lightgray;
+}
+#start:active {
+    background: gray;
+}
+.choice {
+  margin: auto;
+  width: 50%;
+  display:flex;
+  justify-content: space-around;
+}
+.active {
+  max-height: 0;
+  display: none;
+}
+.choice >input {
+  display: none;
+}
+.choice > input + label {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  background: aliceblue;
+  cursor: pointer;
+}
+.choice > input:checked + label {
+  border: solid 3px darkblue;
+}
