@@ -58,8 +58,8 @@ function doNothing(e) {
     console.log(num)
     this.textContent = mark;
     if (winCheck(mark)) {
-      dispHead.textContent = `${mark} wins!!\nThe game resets in 10 seconds`
-      setTimeout(startGame, 10000)
+      dispHead.textContent = `${mark} wins!!\nThe game resets in 3 seconds`
+      setTimeout(startGame, 3000)
       return
     }
     if (mark == 'x') {
