@@ -73,8 +73,8 @@ function doNothing(e) {
 
   if(fullCheck()) {
     // dispHead.textContent = 'game on'
-    dispHead.textContent = 'Draw\nThe game resets in 10 seconds';
-    setTimeout(startGame, 10000)
+    dispHead.textContent = 'Draw\nThe game resets in 3seconds';
+    setTimeout(startGame, 3000)
   }
 }
 
